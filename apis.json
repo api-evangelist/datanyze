@@ -1,0 +1,65 @@
+{
+    "name": "Datanyze",
+    "description": "Datanyze is the leading technographics provider, helping B2B companies apply unique technology insights to identify and close their best accounts.",
+    "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/1401-datanyze.jpg",
+    "tags": [
+        "api provider",
+        "have api",
+        "notifications"
+    ],
+    "created": "2019-12-19",
+    "modified": "2019-12-19",
+    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/datanyze\/master\/apis.json",
+    "specificationVersion": "0.14",
+    "apis": [
+        {
+            "name": "Datanyze",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/1401-datanyze.jpg",
+            "humanURL": "http:\/\/www.datanyze.com\/api-documentation\/",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/datanyze-openapi.json"
+                }
+            ]
+        }
+    ],
+    "include": [],
+    "x-common": [
+        {
+            "type": "Website",
+            "url": "http:\/\/www.datanyze.com\/api-documentation\/"
+        },
+        {
+            "type": "Blog",
+            "url": "http:\/\/www.datanyze.com\/blog\/"
+        },
+        {
+            "type": "Blog RSS",
+            "url": "http:\/\/feeds.feedburner.com\/Datanyze"
+        },
+        {
+            "type": "Crunchbase",
+            "url": "https:\/\/crunchbase.com\/organization\/datanyze"
+        },
+        {
+            "type": "Crunchbase",
+            "url": "http:\/\/www.crunchbase.com\/company\/datanyze"
+        },
+        {
+            "type": "Email",
+            "url": "support@datanyze.com"
+        },
+        {
+            "type": "Email",
+            "url": "privacy@datanyze.com"
+        },
+        {
+            "type": "Twitter",
+            "url": "https:\/\/twitter.com\/datanyze"
+        }
+    ]
+}
