@@ -1,8 +1,25 @@
 aid: datanyze
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/datanyze.png
 name: Datanyze *
-description: 'Datanyze * is a company surfaced as a portfolio company of gv and added to the API Evangelist
-  network as a stub for enrichment. Sector: enterprise. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Datanyze is a sales intelligence and technographic data provider owned by ZoomInfo. It
+  offers a free browser (Chrome) extension that surfaces business contact information — work email
+  addresses, direct-dial and mobile phone numbers, and company firmographics — for prospects on
+  LinkedIn profiles and company websites. Datanyze pioneered "technographics," the practice of tracking
+  the web technologies and software a company uses to power targeted B2B sales and marketing outreach.
+  ZoomInfo acquired Datanyze in 2018 to deliver real-time technographic data to its customers. No public
+  developer API is currently documented; this profile captures the company''s discoverable web and
+  security surface.'
 url: https://raw.githubusercontent.com/api-evangelist/datanyze/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +29,18 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Enterprise
+- Sales Intelligence
+- Technographics
+- Data Enrichment
+- Lead Generation
+- Contact Data
+- Marketing
+- B2B
+- Prospecting
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +48,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/datanyze-domain-security.yml
 - type: Website
   url: https://www.datanyze.com/
+- type: GitHubOrganization
+  url: https://github.com/Datanyze
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
