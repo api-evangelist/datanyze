@@ -29,7 +29,7 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-18'
+modified: '2026-08-13'
 tags:
 - Company
 - Enterprise
@@ -54,8 +54,34 @@ common:
   url: https://www.datanyze.com/
 - type: GitHubOrganization
   url: https://github.com/Datanyze
+- type: Packages
+  url: packages/datanyze-packages.yml
+- type: Plans
+  url: plans/datanyze-plans-pricing.yml
+- type: LLMsTxt
+  url: llms/datanyze-llms.txt
 x-enrichment:
-  date: '2026-07-19'
-  status: backfilled
+  date: '2026-08-13'
+  status: minimal
+  artifacts_added: 4
   pass: local-v1
-  note: backfilled from .gitignore signal + verified work evidence
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    Datanyze ships only an end-user Chrome extension; its own sitemap lists 32,286 URLs and every
+    one is a /market-share technographics page last modified 2021-04-21, with no developer, docs,
+    or API page anywhere in it, and the live api.datanyze.com backend serves the extension only
+    (every probed path returns a NestJS 404 and no specification).
+  evidence:
+  - url: https://www.datanyze.com/sitemap-index-1.xml
+    status: 200
+  - url: https://api.datanyze.com/openapi.json
+    status: 404
+  - url: https://api.datanyze.com/.well-known/agent-card.json
+    status: 404
+  - url: https://www.datanyze.com/.well-known/security.txt
+    status: 404
+  - url: https://www.datanyze.com/pricing
+    status: 403
+  checked: '2026-08-13'
