@@ -1,0 +1,18 @@
+generated: '2026-08-13'
+method: probed
+source: https://www.datanyze.com/pricing
+note: >-
+  Not measurable. Every content page on www.datanyze.com — including /pricing — is served a
+  PerimeterX bot challenge (HTTP 403, "Access to this page has been denied", 5.8KB px-captcha
+  shell) to any non-browser client. This is a recorded wall, NOT a finding that Datanyze publishes
+  no plans: we could not read the page, so plan_count reflects plans captured (zero), not plans
+  offered. The site's own sitemap (32,286 URLs, all under /market-share, lastmod 2021-04-21)
+  contains no pricing, developer, or documentation page at all, so there is no alternate
+  machine-readable pricing surface to read instead. There is no API product to price in any case —
+  see x-coverage in apis.yml.
+evidence:
+- {url: 'https://www.datanyze.com/pricing', status: 403, note: PerimeterX px-captcha challenge}
+- {url: 'https://www.datanyze.com/', status: 403, note: PerimeterX px-captcha challenge}
+- {url: 'https://www.datanyze.com/sitemap-index-1.xml', status: 200, note: 32286 URLs, none pricing or developer}
+plan_count: 0
+plans: []

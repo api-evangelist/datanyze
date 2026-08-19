@@ -1,0 +1,30 @@
+generated: '2026-08-13'
+method: searched
+source: >-
+  Unauthenticated registry searches (npm, PyPI, RubyGems, Packagist, crates.io, NuGet) plus the
+  github.com/Datanyze organization listing
+note: >-
+  No first-party Datanyze client library exists on any public package registry. The Datanyze GitHub
+  organization (created 2014) has exactly two public repositories, both third-party forks unrelated
+  to any Datanyze API: `php-postal` (archived 2017, C bindings to libpostal) and `ansible-container`
+  (last pushed 2018). Datanyze's product today is a free Chrome extension, which is distributed
+  through the Chrome Web Store rather than a package registry, so there is no versioned artifact to
+  read currency from. No SDKs pointer is emitted in apis.yml.
+packages: []
+registries_searched:
+- {registry: npm, query: datanyze, results: 0}
+- {registry: pypi, query: datanyze, results: 0, http_status: 404}
+- {registry: rubygems, query: datanyze, results: 0}
+- {registry: packagist, query: datanyze, results: 0, note: no name-matching package}
+- {registry: crates.io, query: datanyze, results: 0}
+- {registry: nuget, query: datanyze, results: 0}
+github_organization:
+  url: https://github.com/Datanyze
+  public_repos: 2
+  first_party_sdks: 0
+  repos:
+  - {name: php-postal, archived: true, last_push: '2017-06-21', first_party: false}
+  - {name: ansible-container, archived: false, last_push: '2018-05-03', first_party: false}
+summary:
+  package_count: 0
+  official_count: 0
